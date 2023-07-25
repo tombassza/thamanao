@@ -2,7 +2,7 @@
 $db_host = 'localhost';
 $db_user = 'root'; // ชื่อผู้ใช้ฐานข้อมูล
 $db_pass = ''; // รหัสผ่านฐานข้อมูล
-$db_name = 'health_survey.sql';
+$db_name = 'health_survey';
 
 $connection = mysqli_connect ($db_host, $db_user, $db_pass, $db_name);
 
