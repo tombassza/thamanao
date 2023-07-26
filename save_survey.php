@@ -28,11 +28,11 @@ $q14 = $_POST['q14'];
 $q15 = $_POST['q15'];
 // รับข้อมูลผู้ประเมิน
 $name = $_POST['name'];
-$email = $_POST['email'];
+
 $age = $_POST['age'];
 $gender = $_POST['gender'];
 // บันทึกข้อมูลผู้ประเมินลงในตาราง assessors
-$sql_assessor = "INSERT INTO assessors (name, email, age, gender) VALUES ('$name', '$email', $age, '$gender')";
+$sql_assessor = "INSERT INTO assessors (name, age, gender) VALUES ('$name', $age, '$gender')";
 if (!mysqli_query($connection, $sql_assessor)) {
   die('เกิดข้อผิดพลาดในการบันทึกข้อมูลผู้ประเมิน: ' . mysqli_error($connection));
 }
